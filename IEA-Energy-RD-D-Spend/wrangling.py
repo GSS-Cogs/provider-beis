@@ -9,6 +9,7 @@ from pathlib import Path
 @click.option("--output", default=Path("./output.csv"), type=click.Path(path_type=Path))
 def wrangle(input: Path(), output: Path()) -> None:
     df = pd.read_excel(input, skiprows=[0])
+    df = df.iloc[: , :-2] 
     df = pd.melt(frame=df, id_vars=[
                  'Country', 'Currency', 'Economic Indicators'], var_name='Year', value_name='Value')
     df['Economic Indicators'] = df['Economic Indicators'].str.rstrip()
