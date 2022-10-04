@@ -1,0 +1,78 @@
+
+- This file is a data cube.
+
+- The data cube has the following catalog metadata:
+        - Title: Energy Technology RD&D Budgets
+        - Label: Energy Technology RD&D Budgets
+        - Issued: 2022-10-04T15:56:04.358558
+        - Modified: 2022-10-04T15:56:04.358558
+        - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+        - Creator: https://www.iea.org
+        - Publisher: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
+        - Landing Pages: None
+        - Themes: 
+		-- https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure
+        - Keywords: None
+        - Contact Point: None
+        - Identifier: Energy Technology RD&D Budgets
+        - Comment: None
+        - Description: None
+        
+
+- The data cube has the following data structure definition:
+        - Dataset Label: Energy Technology RD&D Budgets
+        - Number of Components: 7
+        - Components:
+                                                                Property                  Property Label Property Type        Column Title  Required
+                    energy-technology-rd-d-budgets.csv#dimension/country                         Country     Dimension             Country      True
+    energy-technology-rd-d-budgets.csv#measure/national-currency-nominal     National currency (nominal)       Measure                          True
+energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices National Currency (2021 prices)       Measure                          True
+              energy-technology-rd-d-budgets.csv#dimension/energy-sector                   Energy Sector     Dimension Economic Indicators      True
+                       energy-technology-rd-d-budgets.csv#dimension/year                            Year     Dimension                Year      True
+                            http://purl.org/linked-data/cube#measureType                                     Dimension            Currency      True
+             http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure                                     Attribute                          True
+        - Columns where suppress output is true: 
+		-- Uri Identifier
+
+- The data cube has the following code list information:
+        - Number of Code Lists: 2
+        - Code Lists:
+                  Code List Code List Label     Columns Used In
+energy-sector.csv#code-list   Energy Sector Economic Indicators
+         year.csv#code-list            Year                Year
+
+- The data cube has the following dataset information:
+        - Number of Observations: 198
+        - Number of Duplicates: 0
+        - First 10 Observations: 
+  Country                      Currency                       Economic Indicators  Year   Value
+K02000001     national-currency-nominal                         energy-efficiency  2010 173.246
+K02000001     national-currency-nominal                              fossil-fuels  2010  54.857
+K02000001     national-currency-nominal                                renewables  2010 167.650
+K02000001     national-currency-nominal                                   nuclear  2010  70.071
+K02000001     national-currency-nominal                   hydrogen-and-fuel-cells  2010  19.819
+K02000001     national-currency-nominal      other-power-and-storage-technologies  2010  12.593
+K02000001     national-currency-nominal other-cross-cutting-technologies/research  2010  12.652
+K02000001     national-currency-nominal                               unallocated  2010   0.000
+K02000001     national-currency-nominal                              total-budget  2010 510.888
+K02000001 national-currency-2021-prices                         energy-efficiency  2010 213.272
+        - Last 10 Observations: 
+  Country                      Currency                       Economic Indicators  Year   Value
+K02000001     national-currency-nominal                              total-budget  2020 932.741
+K02000001 national-currency-2021-prices                         energy-efficiency  2020 244.609
+K02000001 national-currency-2021-prices                              fossil-fuels  2020  39.885
+K02000001 national-currency-2021-prices                                renewables  2020 111.890
+K02000001 national-currency-2021-prices                                   nuclear  2020 315.174
+K02000001 national-currency-2021-prices                   hydrogen-and-fuel-cells  2020  38.069
+K02000001 national-currency-2021-prices      other-power-and-storage-technologies  2020  77.808
+K02000001 national-currency-2021-prices other-cross-cutting-technologies/research  2020  72.006
+K02000001 national-currency-2021-prices                               unallocated  2020  25.322
+K02000001 national-currency-2021-prices                              total-budget  2020 924.763
+        
+
+- The data cube has the following value counts:
+        - Value counts broken-down by measure and unit (of measure):
+                      Measure            Unit  Count
+national-currency-2021-prices Millions of GBP     99
+    national-currency-nominal Millions of GBP     99
+        

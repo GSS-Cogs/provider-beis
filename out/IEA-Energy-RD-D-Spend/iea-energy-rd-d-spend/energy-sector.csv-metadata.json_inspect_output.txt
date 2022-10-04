@@ -1,0 +1,51 @@
+
+- This file is a code list.
+
+- The code list has the following catalog metadata:
+        - Title: Energy Sector
+        - Label: Energy Sector
+        - Issued: 2022-10-04T15:56:04.345150
+        - Modified: 2022-10-04T15:56:04.345150
+        - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+        - Creator: None
+        - Publisher: None
+        - Landing Pages: None
+        - Themes: None
+        - Keywords: None
+        - Contact Point: None
+        - Identifier: Energy Sector
+        - Comment: None
+        - Description: None
+        
+
+- The code list has the following dataset information:
+        - Number of Concepts: 9
+        - Number of Duplicates: 0
+        - Concepts: 
+                           Uri Identifier                                     Label                                  Notation Parent Uri Identifier  Sort Priority  Description
+                             total-budget                              Total Budget                              Total Budget                   NaN              0          NaN
+                        energy-efficiency                         Energy efficiency                         Energy efficiency          total-budget              0          NaN
+                             fossil-fuels                              Fossil fuels                              Fossil fuels          total-budget              1          NaN
+                               renewables                                Renewables                                Renewables          total-budget              2          NaN
+                                  nuclear                                   Nuclear                                   Nuclear          total-budget              3          NaN
+     other-power-and-storage-technologies      Other power and storage technologies      Other power and storage technologies          total-budget              4          NaN
+                  hydrogen-and-fuel-cells                   Hydrogen and fuel cells                   Hydrogen and fuel cells          total-budget              5          NaN
+other-cross-cutting-technologies/research Other cross-cutting technologies/research Other cross-cutting technologies/research          total-budget              6          NaN
+                              unallocated                               Unallocated                               Unallocated          total-budget              7          NaN
+        
+
+- The code list has the following concepts information:
+        - Concepts hierarchy depth: 2
+        - Concepts hierarchy:
+root
+└── Total Budget
+    ├── Energy efficiency
+    ├── Fossil fuels
+    ├── Hydrogen and fuel cells
+    ├── Nuclear
+    ├── Other cross-cutting technologies/research
+    ├── Other power and storage technologies
+    ├── Renewables
+    └── Unallocated
+
+        

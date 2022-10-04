@@ -1,0 +1,322 @@
+[
+    {
+        "message": "Creator 'https://www.iea.org' is not recognised by csvcubed.",
+        "json_path": "$.creator",
+        "offending_value": "https://www.iea.org",
+        "schema_validator_type": "enum",
+        "children": []
+    },
+    {
+        "message": "License 'IEA (2022) Energy Technology RD&D Budget, www.iea.org/reports, All rights reserved.' is not recognised by csvcubed.",
+        "json_path": "$.license",
+        "offending_value": "IEA (2022) Energy Technology RD&D Budget, www.iea.org/reports, All rights reserved.",
+        "schema_validator_type": "enum",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[0].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[0].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[0].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[1].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[1].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[1].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[2].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[2].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[2].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[3].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[3].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[3].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[4].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[4].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[4].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[5].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[5].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[5].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[6].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[6].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[6].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[7].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[7].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].children[7].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].description",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].same_as",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'string'",
+        "json_path": "$.concepts[0].uri_safe_identifier_override",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "None is not of type 'object'",
+        "json_path": "$.sort",
+        "offending_value": null,
+        "schema_validator_type": "type",
+        "children": []
+    },
+    {
+        "message": "'title' is a required property",
+        "json_path": "$",
+        "offending_value": {
+            "sort": null,
+            "concepts": [
+                {
+                    "label": "Total Budget",
+                    "notation": "Total Budget",
+                    "description": null,
+                    "sort_order": 0,
+                    "same_as": null,
+                    "children": [
+                        {
+                            "label": "Energy efficiency",
+                            "notation": "Energy efficiency",
+                            "description": null,
+                            "sort_order": 0,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Fossil fuels",
+                            "notation": "Fossil fuels",
+                            "description": null,
+                            "sort_order": 1,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Renewables",
+                            "notation": "Renewables",
+                            "description": null,
+                            "sort_order": 2,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Nuclear",
+                            "notation": "Nuclear",
+                            "description": null,
+                            "sort_order": 3,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Other power and storage technologies",
+                            "notation": "Other power and storage technologies",
+                            "description": null,
+                            "sort_order": 4,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Hydrogen and fuel cells",
+                            "notation": "Hydrogen and fuel cells",
+                            "description": null,
+                            "sort_order": 5,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Other cross-cutting technologies/research",
+                            "notation": "Other cross-cutting technologies/research",
+                            "description": null,
+                            "sort_order": 6,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        },
+                        {
+                            "label": "Unallocated",
+                            "notation": "Unallocated",
+                            "description": null,
+                            "sort_order": 7,
+                            "same_as": null,
+                            "children": [],
+                            "uri_safe_identifier_override": null
+                        }
+                    ],
+                    "uri_safe_identifier_override": null
+                }
+            ],
+            "schema": "https://purl.org/csv-cubed/code-list-config/v1",
+            "metadata": {
+                "title": "Energy Sector",
+                "identifier": null,
+                "summary": "",
+                "description": "",
+                "creator_uri": null,
+                "publisher_uri": null,
+                "landing_page_uris": [],
+                "theme_uris": [],
+                "keywords": [],
+                "dataset_issued": null,
+                "dataset_modified": null,
+                "license_uri": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+                "public_contact_point_uri": null,
+                "uri_safe_identifier_override": null
+            }
+        },
+        "schema_validator_type": "required",
+        "children": []
+    }
+]
