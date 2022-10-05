@@ -4,9 +4,9 @@
 - The data cube has the following catalog metadata:
         - Title: Energy Technology RD&D Budgets
         - Label: Energy Technology RD&D Budgets
-        - Issued: 2022-10-04T15:56:04.358558
-        - Modified: 2022-10-04T15:56:04.358558
-        - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+        - Issued: 2022-10-05T08:42:13.514902
+        - Modified: 2022-10-05T08:42:13.514902
+        - License: https://raw.githubusercontent.com/GSS-Cogs/provider-beis/main/IEA-Energy-RD-D-Spend/LICENSE.md
         - Creator: https://www.iea.org
         - Publisher: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
         - Landing Pages: None

@@ -7,9 +7,9 @@
         "children": []
     },
     {
-        "message": "License 'IEA (2022) Energy Technology RD&D Budget, www.iea.org/reports, All rights reserved.' is not recognised by csvcubed.",
+        "message": "License 'https://raw.githubusercontent.com/GSS-Cogs/provider-beis/main/IEA-Energy-RD-D-Spend/LICENSE.md' is not recognised by csvcubed.",
         "json_path": "$.license",
-        "offending_value": "IEA (2022) Energy Technology RD&D Budget, www.iea.org/reports, All rights reserved.",
+        "offending_value": "https://raw.githubusercontent.com/GSS-Cogs/provider-beis/main/IEA-Energy-RD-D-Spend/LICENSE.md",
         "schema_validator_type": "enum",
         "children": []
     },
