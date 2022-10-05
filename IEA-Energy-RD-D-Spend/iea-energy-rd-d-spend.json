@@ -1,7 +1,7 @@
 {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "Energy Technology RD&D Budgets",
-    "license": "IEA (2022) Energy Technology RD&D Budget, www.iea.org/reports, All rights reserved.",
+    "license": "https://raw.githubusercontent.com/GSS-Cogs/provider-beis/main/IEA-Energy-RD-D-Spend/LICENSE.md",
     "publisher": "https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy",
     "themes": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure",
     "creator": "https://www.iea.org",
