@@ -15,7 +15,7 @@
         - Keywords: None
         - Contact Point: None
         - Identifier: Energy Technology RD&D Budgets
-        - Comment: Tracking trends in spending by energy technology in IEA countries back to 1974
+        - Comment: Tracking trends in spending by energy technology in IEA countries back to 1974.
         - Description: The IEA’s Energy Technology RD&D Budgets database allows users to track trends in spending by energy technology in IEA countries back to 1974. Data is collected from central or federal government budgets, as well as the budgets of state-owned companies, for spending on a range of sectors including energy efficiency, renewables, nuclear power, fossil fuels, hydrogen and fuel cells, and more.
         
 
@@ -26,7 +26,7 @@
                                                                 Property                  Property Label Property Type        Column Title  Required
                     energy-technology-rd-d-budgets.csv#dimension/country                         Country     Dimension             Country      True
     energy-technology-rd-d-budgets.csv#measure/national-currency-nominal     National currency (nominal)       Measure                          True
-energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices National Currency (2021 prices)       Measure                          True
+energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices National currency (2021 prices)       Measure                          True
               energy-technology-rd-d-budgets.csv#dimension/energy-sector                   Energy Sector     Dimension Economic Indicators      True
                        energy-technology-rd-d-budgets.csv#dimension/year                            Year     Dimension                Year      True
                             http://purl.org/linked-data/cube#measureType                                     Dimension            Currency      True

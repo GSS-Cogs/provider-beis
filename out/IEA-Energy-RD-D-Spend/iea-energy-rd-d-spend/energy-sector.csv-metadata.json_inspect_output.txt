@@ -4,8 +4,8 @@
 - The code list has the following catalog metadata:
         - Title: Energy Sector
         - Label: Energy Sector
-        - Issued: 2022-10-06T12:26:22.095656
-        - Modified: 2022-10-06T12:26:22.095656
+        - Issued: 2022-10-06T13:04:06.932444
+        - Modified: 2022-10-06T13:04:06.932444
         - License: http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
         - Creator: None
         - Publisher: None
