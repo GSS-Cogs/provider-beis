@@ -14,6 +14,7 @@ def wrangle(input: Path(), output: Path()) -> None:
                  'Country', 'Currency', 'Economic Indicators'], var_name='Year', value_name='Value')
     df['Economic Indicators'] = df['Economic Indicators'].str.rstrip()
     df = df.replace({'Country': {"United Kingdom": "K02000001"}})
+    df = df.replace({'Currency': {"National Currency (2021 prices)": "National currency (2021 prices)"}})
     df.to_csv(output, index=False)
     return
 

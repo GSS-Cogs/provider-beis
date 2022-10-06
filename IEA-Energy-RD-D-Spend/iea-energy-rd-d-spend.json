@@ -1,7 +1,7 @@
 {
     "$schema": "https://purl.org/csv-cubed/qube-config/v1",
     "title": "Energy Technology RD&D Budgets",
-    "summary": "Tracking trends in spending by energy technology in IEA countries back to 1974",
+    "summary": "Tracking trends in spending by energy technology in IEA countries back to 1974.",
     "license": "https://raw.githubusercontent.com/GSS-Cogs/provider-beis/main/IEA-Energy-RD-D-Spend/LICENSE.md",
     "publisher": "https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy",
     "description": "The IEA’s Energy Technology RD&D Budgets database allows users to track trends in spending by energy technology in IEA countries back to 1974. Data is collected from central or federal government budgets, as well as the budgets of state-owned companies, for spending on a range of sectors including energy efficiency, renewables, nuclear power, fossil fuels, hydrogen and fuel cells, and more.",
