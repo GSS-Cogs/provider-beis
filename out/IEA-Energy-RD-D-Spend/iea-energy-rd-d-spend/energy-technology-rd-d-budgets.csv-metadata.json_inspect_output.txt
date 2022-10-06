@@ -4,8 +4,8 @@
 - The data cube has the following catalog metadata:
         - Title: Energy Technology RD&D Budgets
         - Label: Energy Technology RD&D Budgets
-        - Issued: 2022-10-06T11:10:42.364038
-        - Modified: 2022-10-06T11:10:42.364038
+        - Issued: 2022-05-03T00:00:00
+        - Modified: 2022-05-03T00:00:00
         - License: https://raw.githubusercontent.com/GSS-Cogs/provider-beis/main/IEA-Energy-RD-D-Spend/LICENSE.md
         - Creator: https://www.iea.org
         - Publisher: https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy
@@ -15,7 +15,7 @@
         - Keywords: None
         - Contact Point: None
         - Identifier: Energy Technology RD&D Budgets
-        - Comment: None
+        - Comment: Tracking trends in spending by energy technology in IEA countries back to 1974
         - Description: The IEA’s Energy Technology RD&D Budgets database allows users to track trends in spending by energy technology in IEA countries back to 1974. Data is collected from central or federal government budgets, as well as the budgets of state-owned companies, for spending on a range of sectors including energy efficiency, renewables, nuclear power, fossil fuels, hydrogen and fuel cells, and more.
         
 
