@@ -76,7 +76,7 @@
                     "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
                 },
                 {
-                    "label": "National Currency (2021 prices)",
+                    "label": "National currency (2021 prices)",
                     "description": "These figures have been adjusted to be equivalent to 2021 prices",
                     "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
                 }
