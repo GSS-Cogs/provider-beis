@@ -7,7 +7,7 @@
     "description": "The IEA’s Energy Technology RD&D Budgets database allows users to track trends in spending by energy technology in IEA countries back to 1974. Data is collected from central or federal government budgets, as well as the budgets of state-owned companies, for spending on a range of sectors including energy efficiency, renewables, nuclear power, fossil fuels, hydrogen and fuel cells, and more.",
     "themes": "https://www.ons.gov.uk/economy/governmentpublicsectorandtaxes/researchanddevelopmentexpenditure",
     "creator": "https://www.iea.org",
-    "dataset_issued": "2022-05-03",
+    "dataset_issued": "2022-11-10",
     "columns": {
         "Year": {
             "label": "Year",
@@ -57,6 +57,10 @@
                                 "notation": "Unallocated"
                             }
                         ]
+                    },
+                    {
+                        "label": "RD&D Budget as % of GDP",
+                        "notation": "RD&D Budget as % of GDP"
                     }
                 ]
             }
@@ -68,7 +72,7 @@
             "cell_uri_template": "http://statistics.data.gov.uk/id/statistical-geography/{+country}",
             "from_existing": "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
         },
-        "Currency": {
+        "Measure": {
             "type": "measures",
             "values": [
                 {
@@ -76,20 +80,27 @@
                     "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
                 },
                 {
-                    "label": "National currency (2021 prices)",
-                    "description": "These figures have been adjusted to be equivalent to 2021 prices",
-                    "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
+                    "label": "Percentage of GDP"
+                }
+            ]
+        },
+        "Unit": {
+            "type": "units",
+            "values": [
+                {
+                    "label": "Millions of GBP",
+                    "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
+                    "scaling_factor": 1000000,
+                    "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency"
+                },
+                {
+                    "label": "%",
+                    "from_existing": "http://qudt.org/vocab/unit/PERCENT"
                 }
             ]
         },
         "Value": {
-            "type": "observations",
-            "unit": {
-                "label": "Millions of GBP",
-                "from_existing": "http://qudt.org/vocab/unit/PoundSterling",
-                "scaling_factor": 1000000,
-                "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency"
-            }
+            "type": "observations"  
         }
     }
 }
