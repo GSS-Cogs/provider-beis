@@ -8,7 +8,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2011,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2011,22.7290,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2011,0.0000,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2011,351.1430,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2011,0.0210,%
+K02000001,Percentage of GDP,Total Budget,2011,0.0210,Percent
 K02000001,National currency (nominal),Energy efficiency,2012,90.9310,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2012,35.7470,Millions of GBP
 K02000001,National currency (nominal),Renewables,2012,58.7100,Millions of GBP
@@ -18,7 +18,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2012,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2012,36.1510,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2012,0.0000,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2012,317.5830,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2012,0.0184,%
+K02000001,Percentage of GDP,Total Budget,2012,0.0184,Percent
 K02000001,National currency (nominal),Energy efficiency,2013,117.5860,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2013,35.9980,Millions of GBP
 K02000001,National currency (nominal),Renewables,2013,89.4010,Millions of GBP
@@ -28,7 +28,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2013,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2013,57.6010,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2013,0.0000,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2013,405.6740,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2013,0.0226,%
+K02000001,Percentage of GDP,Total Budget,2013,0.0226,Percent
 K02000001,National currency (nominal),Energy efficiency,2014,62.5200,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2014,71.9490,Millions of GBP
 K02000001,National currency (nominal),Renewables,2014,69.3580,Millions of GBP
@@ -38,7 +38,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2014,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2014,43.4790,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2014,0.0000,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2014,344.5570,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2014,0.0184,%
+K02000001,Percentage of GDP,Total Budget,2014,0.0184,Percent
 K02000001,National currency (nominal),Energy efficiency,2015,78.4860,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2015,16.5650,Millions of GBP
 K02000001,National currency (nominal),Renewables,2015,69.5340,Millions of GBP
@@ -48,7 +48,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2015,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2015,28.9520,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2015,8.6360,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2015,378.6020,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2015,0.0196,%
+K02000001,Percentage of GDP,Total Budget,2015,0.0196,Percent
 K02000001,National currency (nominal),Energy efficiency,2016,105.9350,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2016,26.8370,Millions of GBP
 K02000001,National currency (nominal),Renewables,2016,122.7880,Millions of GBP
@@ -58,7 +58,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2016,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2016,42.5740,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2016,0.0000,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2016,484.5690,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2016,0.0240,%
+K02000001,Percentage of GDP,Total Budget,2016,0.0240,Percent
 K02000001,National currency (nominal),Energy efficiency,2017,175.7200,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2017,33.6600,Millions of GBP
 K02000001,National currency (nominal),Renewables,2017,101.3900,Millions of GBP
@@ -68,7 +68,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2017,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2017,66.9400,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2017,37.2800,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2017,654.2400,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2017,0.0312,%
+K02000001,Percentage of GDP,Total Budget,2017,0.0312,Percent
 K02000001,National currency (nominal),Energy efficiency,2018,198.6270,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2018,19.5730,Millions of GBP
 K02000001,National currency (nominal),Renewables,2018,126.0560,Millions of GBP
@@ -78,7 +78,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2018,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2018,114.7000,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2018,2.3770,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2018,740.9900,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2018,0.0341,%
+K02000001,Percentage of GDP,Total Budget,2018,0.0341,Percent
 K02000001,National currency (nominal),Energy efficiency,2019,194.9406,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2019,24.5927,Millions of GBP
 K02000001,National currency (nominal),Renewables,2019,114.0005,Millions of GBP
@@ -88,7 +88,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2019,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2019,166.7492,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2019,1.5356,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2019,817.7154,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2019,0.0363,%
+K02000001,Percentage of GDP,Total Budget,2019,0.0363,Percent
 K02000001,National currency (nominal),Energy efficiency,2020,246.4079,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2020,39.8870,Millions of GBP
 K02000001,National currency (nominal),Renewables,2020,112.3557,Millions of GBP
@@ -98,7 +98,7 @@ K02000001,National currency (nominal),Other power and storage technologies,2020,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2020,76.7373,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2020,25.5143,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2020,919.6133,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2020,0.0428,%
+K02000001,Percentage of GDP,Total Budget,2020,0.0428,Percent
 K02000001,National currency (nominal),Energy efficiency,2021,265.1315,Millions of GBP
 K02000001,National currency (nominal),Fossil fuels,2021,23.1694,Millions of GBP
 K02000001,National currency (nominal),Renewables,2021,137.4954,Millions of GBP
@@ -108,4 +108,4 @@ K02000001,National currency (nominal),Other power and storage technologies,2021,
 K02000001,National currency (nominal),Other cross-cutting technologies/research,2021,56.4535,Millions of GBP
 K02000001,National currency (nominal),Unallocated,2021,26.9175,Millions of GBP
 K02000001,National currency (nominal),Total Budget,2021,1055.3156,Millions of GBP
-K02000001,Percentage of GDP,RD&D Budget as % of GDP,2021,0.0455,%
+K02000001,Percentage of GDP,Total Budget,2021,0.0455,Percent
