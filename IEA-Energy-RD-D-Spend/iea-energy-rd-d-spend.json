@@ -57,10 +57,6 @@
                                 "notation": "Unallocated"
                             }
                         ]
-                    },
-                    {
-                        "label": "RD&D Budget as % of GDP",
-                        "notation": "RD&D Budget as % of GDP"
                     }
                 ]
             }
@@ -80,7 +76,8 @@
                     "from_existing": "http://gss-data.org.uk/def/trade/measure/monetary-value"
                 },
                 {
-                    "label": "Percentage of GDP"
+                    "label": "Percentage of GDP",
+                    "from_existing": "http://gss-data.org.uk/def/measure/count"
                 }
             ]
         },
@@ -94,13 +91,13 @@
                     "quantity_kind": "http://qudt.org/vocab/quantitykind/Currency"
                 },
                 {
-                    "label": "%",
+                    "label": "Percent",
                     "from_existing": "http://qudt.org/vocab/unit/PERCENT"
                 }
             ]
         },
         "Value": {
-            "type": "observations"  
+            "type": "observations"
         }
     }
 }
