@@ -1,22 +1,22 @@
 <!doctype html>
 <html>
-  <head>
-  </head>
-  <body>
-    <h3>CSV-Ws generated are as below. The latest commit id is f68e5db89b9559f36fb3a46251d4e262c7dbff6e.</h3>
+    <head>
+    </head>
+    <body>
+    <h3>CSV-Ws generated are as below. The latest commit id is 6dc0f334b7335b2a0eb426820e49554cf139dd79.</h3>
     <div id="files-container"></div>
     <script type="text/javascript">
-      var html_str = "<ul>";
-      var files = ",./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.csv,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.csv-metadata.json,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/validation-errors.json,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.table.json,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.table.json,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-technology-rd-d-budgets.csv-metadata.json_inspect_output.txt,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-technology-rd-d-budgets.csv,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.csv-metadata.json_inspect_output.txt,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-technology-rd-d-budgets.csv-metadata.json,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.csv,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.csv-metadata.json,./out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.csv-metadata.json_inspect_output.txt".split(',');
-      files.shift()
-      files.sort()
-      files.forEach(function(file) {
+        var html_str = "<ul>";
+        var files = "|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.table.json|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/validation-errors.json|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-technology-rd-d-budgets.csv|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.csv-metadata.json_inspect_output.txt|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.csv|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-technology-rd-d-budgets.csv-metadata.json|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.csv-metadata.json_inspect_output.txt|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.csv-metadata.json|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/year.table.json|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.csv|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-technology-rd-d-budgets.csv-metadata.json_inspect_output.txt|||out/IEA-Energy-RD-D-Spend/iea-energy-rd-d-spend/energy-sector.csv-metadata.json".split('|||');
+        files.shift()
+        files.sort()
+        files.forEach(function(file) {
         file = file.replace("./","")
         link = "https://GSS-Cogs.github.io/provider-beis/"+file
         html_str += "<li>"+"<a href='"+ link + "'>"+file+"</a></li>";
-      });
-      html_str += "</ul>";
-      document.getElementById("files-container").innerHTML = html_str;
+        });
+        html_str += "</ul>";
+        document.getElementById("files-container").innerHTML = html_str;
     </script>
-  </body>
+    </body>
 </html>
