@@ -21,38 +21,47 @@
                 "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
                 "concepts": [
                     {
+                        "uri_safe_identifier_override": "total_budget",
                         "label": "Total Budget",
                         "notation": "Total Budget",
                         "children": [
                             {
+                                "uri_safe_identifier_override": "energy_efficiency",
                                 "label": "Energy efficiency",
                                 "notation": "Energy efficiency"
                             },
                             {
+                                "uri_safe_identifier_override": "fossil_fuels",
                                 "label": "Fossil fuels",
                                 "notation": "Fossil fuels"
                             },
                             {
+                                "uri_safe_identifier_override": "renewables",
                                 "label": "Renewables",
                                 "notation": "Renewables"
                             },
                             {
+                                "uri_safe_identifier_override": "nuclear",
                                 "label": "Nuclear",
                                 "notation": "Nuclear"
                             },
                             {
+                                "uri_safe_identifier_override": "other_power_and_storage_technologies", 
                                 "label": "Other power and storage technologies",
                                 "notation": "Other power and storage technologies"
                             },
                             {
+                                "uri_safe_identifier_override": "hydrogen_and_fuel_cells",
                                 "label": "Hydrogen and fuel cells",
                                 "notation": "Hydrogen and fuel cells"
                             },
                             {
+                                "uri_safe_identifier_override": "other_cross_cutting_technologies/research",
                                 "label": "Other cross-cutting technologies/research",
                                 "notation": "Other cross-cutting technologies/research"
                             },
                             {
+                                "uri_safe_identifier_override": "unallocated",
                                 "label": "Unallocated",
                                 "notation": "Unallocated"
                             }
