@@ -14,10 +14,10 @@
                         "required": true
                     },
                     {
-                        "titles": "Currency",
-                        "name": "currency",
+                        "titles": "Measure",
+                        "name": "measure",
                         "propertyUrl": "http://purl.org/linked-data/cube#measureType",
-                        "valueUrl": "energy-technology-rd-d-budgets.csv#measure/{+currency}",
+                        "valueUrl": "energy-technology-rd-d-budgets.csv#measure/{+measure}",
                         "required": true
                     },
                     {
@@ -37,8 +37,15 @@
                     {
                         "titles": "Value",
                         "name": "value",
-                        "propertyUrl": "energy-technology-rd-d-budgets.csv#measure/{+currency}",
+                        "propertyUrl": "energy-technology-rd-d-budgets.csv#measure/{+measure}",
                         "datatype": "decimal",
+                        "required": true
+                    },
+                    {
+                        "titles": "Unit",
+                        "name": "unit",
+                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
+                        "valueUrl": "energy-technology-rd-d-budgets.csv#unit/{+unit}",
                         "required": true
                     },
                     {
@@ -52,12 +59,6 @@
                         "virtual": true,
                         "propertyUrl": "http://purl.org/linked-data/cube#dataSet",
                         "valueUrl": "energy-technology-rd-d-budgets.csv#dataset"
-                    },
-                    {
-                        "name": "virt_unit",
-                        "virtual": true,
-                        "propertyUrl": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure",
-                        "valueUrl": "energy-technology-rd-d-budgets.csv#unit/millions-of-gbp"
                     }
                 ],
                 "foreignKeys": [
@@ -80,9 +81,9 @@
                     "country",
                     "economic_indicators",
                     "year",
-                    "currency"
+                    "measure"
                 ],
-                "aboutUrl": "energy-technology-rd-d-budgets.csv#obs/{country},{economic_indicators},{year}@{currency}"
+                "aboutUrl": "energy-technology-rd-d-budgets.csv#obs/{country},{economic_indicators},{year}@{measure}"
             }
         },
         {
@@ -98,12 +99,136 @@
     ],
     "rdfs:seeAlso": [
         {
+            "@id": "energy-technology-rd-d-budgets.csv#component/national-currency-nominal",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 2
+                }
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#class/country",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#component/year",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 5
+                }
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#component/measure-type",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 6
+                }
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#component/energy-sector",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector"
+                }
+            ],
+            "http://purl.org/linked-data/cube#dimension": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 4
+                }
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#measure/percentage-of-gdp",
+            "@type": [
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Percentage of GDP"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://gss-data.org.uk/def/measure/count"
+                }
+            ]
+        },
+        {
             "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal",
             "@type": [
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#MeasureProperty"
+                "http://purl.org/linked-data/cube#MeasureProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://purl.org/linked-data/cube#ComponentProperty"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
@@ -123,132 +248,67 @@
             ]
         },
         {
-            "@id": "energy-technology-rd-d-budgets.csv#class/year",
+            "@id": "energy-technology-rd-d-budgets.csv#structure",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#dimension/year",
-            "@type": [
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#DimensionProperty"
-            ],
-            "http://purl.org/linked-data/cube#codeList": [
-                {
-                    "@id": "year.csv#code-list"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "Year"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#class/year"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#component/year",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/year"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 5
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#component/energy-sector",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 4
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#component/national-currency-nominal",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal"
-                }
-            ],
-            "http://purl.org/linked-data/cube#measure": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 2
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#csvcubed-build-activity",
-            "@type": [
-                "http://www.w3.org/ns/prov#Activity",
+                "http://purl.org/linked-data/cube#DataStructureDefinition",
                 "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
-            "http://www.w3.org/ns/prov#used": [
+            "http://purl.org/linked-data/cube#component": [
                 {
-                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.1.10"
+                    "@id": "energy-technology-rd-d-budgets.csv#component/percentage-of-gdp"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#component/unit"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#component/country"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#component/measure-type"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#component/energy-sector"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#component/national-currency-nominal"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#component/year"
+                }
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/year"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/cube#measureType"
+                },
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#measure/percentage-of-gdp"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/country"
+                },
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal"
                 }
             ]
         },
         {
             "@id": "energy-technology-rd-d-budgets.csv#dimension/country",
             "@type": [
+                "http://purl.org/linked-data/cube#DimensionProperty",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#DimensionProperty"
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
@@ -268,11 +328,60 @@
             ]
         },
         {
+            "@id": "energy-technology-rd-d-budgets.csv#component/percentage-of-gdp",
+            "@type": [
+                "http://purl.org/linked-data/cube#ComponentSet",
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#componentProperty": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#measure/percentage-of-gdp"
+                }
+            ],
+            "http://purl.org/linked-data/cube#measure": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#measure/percentage-of-gdp"
+                }
+            ],
+            "http://purl.org/linked-data/cube#order": [
+                {
+                    "@value": 3
+                }
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector",
+            "@type": [
+                "http://purl.org/linked-data/cube#DimensionProperty",
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+                "http://purl.org/linked-data/cube#ComponentProperty",
+                "http://purl.org/linked-data/cube#CodedProperty",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://purl.org/linked-data/cube#codeList": [
+                {
+                    "@id": "energy-sector.csv#code-list"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Energy Sector"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#range": [
+                {
+                    "@id": "energy-technology-rd-d-budgets.csv#class/energy-sector"
+                }
+            ]
+        },
+        {
             "@id": "energy-technology-rd-d-budgets.csv#component/unit",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://purl.org/linked-data/cube#attribute": [
                 {
@@ -296,151 +405,13 @@
             ]
         },
         {
-            "@id": "energy-technology-rd-d-budgets.csv#component/measure-type",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 6
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#class/energy-sector",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices",
-            "@type": [
-                "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-                "http://purl.org/linked-data/cube#MeasureProperty"
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#comment": [
-                {
-                    "@language": "en",
-                    "@value": "These figures have been adjusted to be equivalent to 2021 prices"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#label": [
-                {
-                    "@language": "en",
-                    "@value": "National currency (2021 prices)"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#range": [
-                {
-                    "@id": "http://www.w3.org/2001/XMLSchema#decimal"
-                }
-            ],
-            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-                {
-                    "@id": "http://gss-data.org.uk/def/trade/measure/monetary-value"
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#structure",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#DataStructureDefinition"
-            ],
-            "http://purl.org/linked-data/cube#component": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/energy-sector"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/country"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/national-currency-nominal"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/year"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/measure-type"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/unit"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#component/national-currency-2021-prices"
-                }
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-nominal"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/cube#measureType"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/year"
-                },
-                {
-                    "@id": "http://purl.org/linked-data/sdmx/2009/attribute#unitMeasure"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices"
-                },
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/country"
-                }
-            ]
-        },
-        {
-            "@id": "energy-technology-rd-d-budgets.csv#component/country",
-            "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
-            ],
-            "http://purl.org/linked-data/cube#componentProperty": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/country"
-                }
-            ],
-            "http://purl.org/linked-data/cube#dimension": [
-                {
-                    "@id": "energy-technology-rd-d-budgets.csv#dimension/country"
-                }
-            ],
-            "http://purl.org/linked-data/cube#order": [
-                {
-                    "@value": 1
-                }
-            ]
-        },
-        {
             "@id": "energy-technology-rd-d-budgets.csv#dataset",
             "@type": [
-                "http://www.w3.org/ns/dcat#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://www.w3.org/ns/dcat#Dataset",
+                "http://www.w3.org/ns/dcat#Resource",
                 "http://purl.org/linked-data/cube#DataSet",
-                "http://purl.org/linked-data/cube#Attachable"
+                "http://purl.org/linked-data/cube#Attachable",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://purl.org/dc/terms/creator": [
                 {
@@ -461,7 +432,7 @@
             "http://purl.org/dc/terms/issued": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-05-03T00:00:00"
+                    "@value": "2022-11-10T00:00:00"
                 }
             ],
             "http://purl.org/dc/terms/license": [
@@ -472,7 +443,7 @@
             "http://purl.org/dc/terms/modified": [
                 {
                     "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
-                    "@value": "2022-05-03T00:00:00"
+                    "@value": "2022-11-10T00:00:00"
                 }
             ],
             "http://purl.org/dc/terms/publisher": [
@@ -515,59 +486,83 @@
             ]
         },
         {
-            "@id": "energy-technology-rd-d-budgets.csv#class/country",
+            "@id": "energy-technology-rd-d-budgets.csv#csvcubed-build-activity",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
-                "http://www.w3.org/2000/01/rdf-schema#Class"
+                "http://www.w3.org/ns/prov#Activity",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://www.w3.org/ns/prov#used": [
+                {
+                    "@id": "https://github.com/GSS-Cogs/csvcubed/releases/tag/v0.2.0"
+                }
             ]
         },
         {
-            "@id": "energy-technology-rd-d-budgets.csv#dimension/energy-sector",
+            "@id": "energy-technology-rd-d-budgets.csv#dimension/year",
             "@type": [
+                "http://purl.org/linked-data/cube#DimensionProperty",
                 "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
                 "http://purl.org/linked-data/cube#ComponentProperty",
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
                 "http://purl.org/linked-data/cube#CodedProperty",
-                "http://purl.org/linked-data/cube#DimensionProperty"
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://purl.org/linked-data/cube#codeList": [
                 {
-                    "@id": "energy-sector.csv#code-list"
+                    "@id": "year.csv#code-list"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#label": [
                 {
                     "@language": "en",
-                    "@value": "Energy Sector"
+                    "@value": "Year"
                 }
             ],
             "http://www.w3.org/2000/01/rdf-schema#range": [
                 {
-                    "@id": "energy-technology-rd-d-budgets.csv#class/energy-sector"
+                    "@id": "energy-technology-rd-d-budgets.csv#class/year"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+                {
+                    "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
                 }
             ]
         },
         {
-            "@id": "energy-technology-rd-d-budgets.csv#component/national-currency-2021-prices",
+            "@id": "energy-technology-rd-d-budgets.csv#class/year",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#component/country",
+            "@type": [
                 "http://purl.org/linked-data/cube#ComponentSet",
-                "http://purl.org/linked-data/cube#ComponentSpecification"
+                "http://purl.org/linked-data/cube#ComponentSpecification",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://purl.org/linked-data/cube#componentProperty": [
                 {
-                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices"
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/country"
                 }
             ],
-            "http://purl.org/linked-data/cube#measure": [
+            "http://purl.org/linked-data/cube#dimension": [
                 {
-                    "@id": "energy-technology-rd-d-budgets.csv#measure/national-currency-2021-prices"
+                    "@id": "energy-technology-rd-d-budgets.csv#dimension/country"
                 }
             ],
             "http://purl.org/linked-data/cube#order": [
                 {
-                    "@value": 3
+                    "@value": 1
                 }
+            ]
+        },
+        {
+            "@id": "energy-technology-rd-d-budgets.csv#class/energy-sector",
+            "@type": [
+                "http://www.w3.org/2000/01/rdf-schema#Class",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ]
         },
         {
@@ -605,11 +600,46 @@
             ]
         },
         {
+            "@id": "energy-technology-rd-d-budgets.csv#unit/percent",
+            "@type": [
+                "http://qudt.org/schema/qudt/Unit",
+                "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
+            ],
+            "http://qudt.org/schema/qudt/isScalingOf": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasFactor": [
+                {
+                    "@type": "http://www.w3.org/2001/XMLSchema#float",
+                    "@value": "1.0"
+                }
+            ],
+            "http://www.ontology-of-units-of-measure.org/resource/om-2/hasUnit": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#isDefinedBy": [
+                {
+                    "@id": "http://qudt.org/vocab/unit/PERCENT"
+                }
+            ],
+            "http://www.w3.org/2000/01/rdf-schema#label": [
+                {
+                    "@language": "en",
+                    "@value": "Percent"
+                }
+            ]
+        },
+        {
             "@id": "energy-technology-rd-d-budgets.csv#unit/millions-of-gbp",
             "@type": [
-                "http://www.w3.org/2000/01/rdf-schema#Resource",
+                "http://qudt.org/schema/qudt/Unit",
                 "http://www.ontology-of-units-of-measure.org/resource/om-2/Unit",
-                "http://qudt.org/schema/qudt/Unit"
+                "http://www.w3.org/2000/01/rdf-schema#Resource"
             ],
             "http://qudt.org/schema/qudt/hasQuantityKind": [
                 {
